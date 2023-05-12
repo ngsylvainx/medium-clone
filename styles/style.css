@@ -38,10 +38,16 @@ body {
   cursor: pointer;
   font-size: 14px;
   font-weight: 400;
-  align-items: center;
+  align-items: center  ;
   gap: 30px;
   margin-right: 50px;
   position: sticky;
+}
+
+@media (max-width: 640px) {
+  .header__menu {
+    gap: 2px;
+  }
 }
 
 .header__menu a {
@@ -73,7 +79,6 @@ body {
   background-color: #ffc024; /* Couleur de fond */
   padding-top: 180px;
   padding-bottom: 100px;
-  padding-left: 150px;
   border-bottom: #111 1px solid;
   gap: 30px;
 }
@@ -101,6 +106,9 @@ body {
   }
 }
 
+
+
+
 .main__headline {
   font-size: 106px;
   font-family: "gt-super", Georgia, "Cambria", "Times New Roman", Times, serif;
@@ -121,17 +129,18 @@ body {
 
 @media (max-width: 640px) {
   .main__headline {
-    font-size: 70px;
+    font-size: 50px;
     font-weight: 400;
     line-height: 74px;
   }
 }
 
-@media (max-width: 320px) {
+@media (max-width: 400px) {
   .main__headline {
-    font-size: 50px;
+    font-size: 40px;
     font-weight: 400;
     line-height: 50px;
+    white-space: normal;
   }
 }
 
@@ -144,6 +153,29 @@ body {
   color: #080808;
   white-space: nowrap;
 }
+
+@media (max-width: 640px) {
+  .main__subheadline {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: normal;
+  color: #080808;
+  }
+}
+
+@media (max-width: 400px) {
+  .main__subheadline {
+    white-space: normal;
+    font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  font-style: normal;
+  color: #080808;
+    
+  }
+}
+
 .main__button {
   margin-top: 20px;
   cursor: pointer; /* Changer le curseur en main */
@@ -156,6 +188,20 @@ body {
   color: white; /* Couleur du texte du bouton */
   border-radius: 30px;
   padding: 10px 50px;
+}
+@media (max-width: 640px) {
+  .main__button {
+    margin-top: 15px;
+    font-size: 15px;
+    font-family: sohne, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 400;
+    line-height: 20px;
+    font-style: normal;
+    background-color: #000000; /* Couleur de fond du bouton */
+    color: white; /* Couleur du texte du bouton */
+    border-radius: 30px;
+    padding: 10px 25px;
+  }
 }
 
 .main__button a {
@@ -209,6 +255,13 @@ body {
   }
 }
 
+@media (max-width: 640px) {
+  .secondary{
+  padding-left: 25px;
+  }
+}
+
+
 .secondary__case {
   display: flex;
   flex-direction: row;
@@ -243,6 +296,12 @@ body {
   line-height: 16px;
   color: #000000;
   white-space: nowrap;
+}
+
+@media (max-width: 640px) {
+  .secondary__case__text__headline__1 {
+  font-size: 10px;
+  }
 }
 
 .secondary__case__text__2 {
@@ -374,7 +433,7 @@ body {
   display: flex;
   flex-direction: row-reverse;
   gap: 50px;
-  align-items: center;
+  align-items: top;
   padding-bottom: 50px;
   justify-content: center;
 }
@@ -382,7 +441,14 @@ body {
 @media (max-width: 768px) {
   .third__feed__case {
     gap: 20px;
-    padding-right: 15px;
+    padding-right: 30px;
+  }
+}
+
+@media (max-width: 400px) {
+  .third__feed__case {
+    gap: 10px;
+    padding-right: 20px;
   }
 }
 
@@ -410,6 +476,12 @@ body {
   white-space: nowrap;
 }
 
+@media (max-width: 640px) {
+  .third__feed__case__content__author__name {
+  white-space: normal ;
+  }
+}
+
 .third__feed__case__content__title {
   font-family: "sohne", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 700;
@@ -425,6 +497,20 @@ body {
     font-size: 16px;
     line-height: 20px;
     padding-top: 10px;
+  }
+}
+
+@media (max-width: 400px) {
+  .third__feed__case__content__title {
+    font-family: "sohne", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 15px;
+    padding-top: 10px;
+    width: 150px; 
+    white-space: nowrap; 
+    overflow: hidden; 
+    text-overflow: ellipsis;
   }
 }
 
@@ -497,6 +583,13 @@ body {
   white-space: nowrap;
 }
 
+@media (max-width: 640px) {
+  .footer__container__links {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
 .footer__container__cta {
   font-family: "sohne", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 500;
@@ -509,6 +602,12 @@ body {
 @media (min-width: 640px) {
   .footer__container__cta {
     display: none;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer__container__cta {
+    font-size: 12px;
   }
 }
 
