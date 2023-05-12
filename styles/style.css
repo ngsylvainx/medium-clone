@@ -79,6 +79,7 @@ body {
   background-color: #ffc024; /* Couleur de fond */
   padding-top: 180px;
   padding-bottom: 100px;
+  padding-left: 200px
   border-bottom: #111 1px solid;
   gap: 30px;
 }
